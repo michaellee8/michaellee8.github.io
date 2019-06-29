@@ -14,7 +14,6 @@ body {
 }
 
 #panel {
-  display: block;
   background-color: white;
   flex-grow: calc(100-var(--top-height-ratio));
 }
@@ -28,12 +27,24 @@ body {
   flex-wrap: wrap;
 }
 
+.flex-container.nowrap {
+  flex-wrap: nowrap;
+}
+
+.flex-container.wrap {
+  flex-wrap: wrap;
+}
+
 .flex-vertical {
   flex-direction: column;
 }
 
 .flex-horizontal {
   flex-direction: row;
+}
+
+.flex-axis-sec-center {
+  align-items: center;
 }
 
 .flex1 {
@@ -93,6 +104,30 @@ body {
   font-size: 48px;
 }
 
+.fs-9 {
+  font-size: 9px;
+}
+
+.fs-12 {
+  font-size: 12px;
+}
+
+.fs-18 {
+  font-size: 18px;
+}
+
+.fs-24 {
+  font-size: 24px;
+}
+
+.fs-36 {
+  font-size: 36px;
+}
+
+.fs-48 {
+  font-size: 48px;
+}
+
 .icon-18 {
   width: 18px;
   height: 18px;
@@ -138,8 +173,59 @@ p.thin {
 
 #left-panel {
   flex-grow: 1;
+  flex-basis: 200px;
+}
+
+#left-panel > div {
+  margin: 10px 5px;
 }
 
 #right-panel {
   flex-grow: 4;
+}
+
+#left-panel > div {
+  margin: 10px 5px;
+}
+
+.blue {
+  color: blue;
+}
+
+.darkcyan {
+  color: darkcyan;
+}
+
+.large.tag {
+  height: 40px;
+  padding: 5px;
+  margin: 5px;
+}
+
+.small.tag {
+  height: 30px;
+  padding: 3px;
+  margin: 5px;
+}
+
+.tag {
+  border: 2px darkcyan solid;
+  border-radius: 10px;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+.dotted.tag {
+  border-style: dotted;
+}
+
+@media print {
+  .no-print,
+  .no-print * {
+    display: none !important;
+  }
+}
+
+hr {
+  color: darkcyan;
 }
