@@ -130,3 +130,16 @@ div.contact-box {
 p.thin {
   margin: 5px 0px;
 }
+
+.contacts {
+  align-content: space-around;
+  flex-wrap: wrap;
+}
+
+#left-panel {
+  flex-grow: 1;
+}
+
+#right-panel {
+  flex-grow: 4;
+}
