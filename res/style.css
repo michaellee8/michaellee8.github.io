@@ -91,6 +91,9 @@ body {
   padding: 10px;
 }
 
+.material-icons.md-12 {
+  font-size: 12px;
+}
 .material-icons.md-18 {
   font-size: 18px;
 }
@@ -112,6 +115,14 @@ body {
   font-size: 12px;
 }
 
+.fs-14 {
+  font-size: 14px;
+}
+
+.fs-16 {
+  font-size: 16px;
+}
+
 .fs-18 {
   font-size: 18px;
 }
@@ -126,6 +137,10 @@ body {
 
 .fs-48 {
   font-size: 48px;
+}
+
+.text.italic {
+  font-style: italic;
 }
 
 .icon-18 {
@@ -150,7 +165,7 @@ rect.white {
 }
 
 a {
-  color: white;
+  color: inherit;
   text-decoration: none;
 }
 
@@ -174,6 +189,7 @@ p.thin {
 #left-panel {
   flex-grow: 1;
   flex-basis: 200px;
+  flex-shrink: 0;
 }
 
 #left-panel > div {
@@ -182,9 +198,11 @@ p.thin {
 
 #right-panel {
   flex-grow: 4;
+  flex-shrink: 1;
+  flex-basis: 400px;
 }
 
-#left-panel > div {
+#right-panel > div {
   margin: 10px 5px;
 }
 
@@ -215,6 +233,10 @@ p.thin {
   margin-right: 4px;
 }
 
+.tag.long-250 {
+  min-width: 250px;
+}
+
 .dotted.tag {
   border-style: dotted;
 }
@@ -232,4 +254,17 @@ hr {
 
 button {
   outline: none;
+}
+
+.break-long-line {
+  word-wrap: break-word;
+}
+
+li {
+  white-space: normal;
+  margin: 5px 0;
+}
+
+.fit-width {
+  width: 100%;
 }
