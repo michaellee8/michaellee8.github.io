@@ -189,7 +189,7 @@
             <hr />
             <div class="flex-container flex-vertical">
               <div>
-                <div class="margin5">Frontend/Mobile</div>
+                <div class="margin5">Frontend / Mobile</div>
                 <div
                   class="flex-container flex-horizontal flex-axis-sec-center"
                 >
@@ -208,7 +208,7 @@
                 </div>
               </div>
               <div>
-                <div class="margin5">Backend/Database</div>
+                <div class="margin5">Backend / Database</div>
                 <div
                   class="flex-container flex-horizontal flex-axis-sec-center"
                 >
@@ -218,17 +218,23 @@
                   <button class="large tag" data-tech-tag="nodejs">
                     Node.js
                   </button>
-                  <button class="large tag" data-tech-tag="mysql">
-                    MySQL
-                  </button>
                   <button class="small tag" data-tech-tag="php">
                     PHP
                   </button>
                   <button class="small tag dotted" data-tech-tag="c-cpp">
                     C / C++
                   </button>
+                  <button class="large tag" data-tech-tag="mysql">
+                    MySQL
+                  </button>
                   <button class="small tag dotted" data-tech-tag="psql">
                     PostgreSQL
+                  </button>
+                  <button class="large tag" data-tech-tag="redis">
+                    Redis
+                  </button>
+                  <button class="large tag" data-tech-tag="rabbitmq">
+                    RabbitMQ
                   </button>
                 </div>
               </div>
@@ -240,7 +246,7 @@
                   <button class="large tag" data-tech-tag="docker">
                     Docker
                   </button>
-                  <button class="large tag" data-tech-tag="gilab">
+                  <button class="large tag" data-tech-tag="gitlab">
                     GitLab CI / CD
                   </button>
                   <button class="small tag dotted" data-tech-tag="k8s">
@@ -253,6 +259,9 @@
                 <div
                   class="flex-container flex-horizontal flex-axis-sec-center"
                 >
+                  <button class="large tag" data-tech-tag="grpc">
+                    gRPC
+                  </button>
                   <button class="small tag dotted" data-tech-tag="godot">
                     Godot Engine
                   </button>
@@ -291,14 +300,13 @@
             <hr />
             <div class="flex-container flex-vertical">
               <div>
-                <span class="text fs-24 bold darkcyan">Developer</span>
+                <span class="text fs-20 bold darkcyan">Developer</span>
                 <br />
                 <span class="text fs-18">
                   HKU e-Learning Development Labroatory
                 </span>
                 <br />
                 <span class="text fs-14 italic">May 2018 - Present</span>
-                <br />
                 <ul>
                   <li>
                     <a
@@ -327,7 +335,6 @@
                       PHP, Golang, Node.js, React.js, MySQL
                     </span>
                   </li>
-
                   <li>
                     <a href="https://websams.sis.iclass.hk/" target="_blank">
                       Develop and deploy iClass Student Information System (SIS)
@@ -342,6 +349,175 @@
                   </li>
                 </ul>
               </div>
+            </div>
+          </div>
+          <div>
+            <span class="fs-24 text bold darkcyan">
+              Highlighted Personal Projects
+            </span>
+            <hr />
+            <div class="flex-container flex-vertical">
+              <a
+                href="https://gitlab.com/beaconapp/beacon-app"
+                target="_blank"
+                class="text bold fs-20 darkcyan"
+              >
+                BeaconApp
+                <i class="material-icons md-12 no-print">
+                  public
+                </i>
+              </a>
+              <ul>
+                <li>
+                  A mobile app to connect people in the same room, as both a
+                  course project and a (failed) fund applying project.
+                </li>
+                <li>
+                  The backend is written in a highly scalable and modular
+                  cloud-native micro-service architecture in three components
+                  for different parts of the system.
+                  <br />
+                  <span class="text fs-14 italic">
+                    Golang, gRPC, Redis, RabbitMQ
+                  </span>
+                </li>
+                <li>
+                  The frontend mobile app uses Bluetooth Beacon technology to
+                  detect which room is the user currently in.
+                  <br />
+                  <span class="text fs-14 italic">
+                    Flutter
+                  </span>
+                </li>
+                <li>
+                  Currently deployed with Docker Compose with Kubernetes config
+                  being developed.
+                  <br />
+                  <span class="text fs-14 italic">
+                    Docker, Kubernetes
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <div class="flex-container flex-vertical">
+              <a
+                href="https://github.com/michaellee8/moodle-puppeteer-tg-bot"
+                target="_blank"
+                class="text bold fs-20 darkcyan"
+              >
+                Telegram Bot for Moodle Quiz Monitoring
+                <i class="material-icons md-12 no-print">
+                  public
+                </i>
+              </a>
+              <ul>
+                <li>
+                  A Telegram bot being developed to detect scored online pop
+                  quizzes to avoid (boring, uninformative and hated) lectures.
+                  Effectively saved me a few hours per week.
+                </li>
+                <li>
+                  The scanner part is built with
+                  <a href="https://pptr.dev/" target="blank">
+                    Puppeteer
+                    <i class="material-icons md-12 no-print">
+                      public
+                    </i>
+                  </a>
+                  which scans the course page frequently and ping the bot when
+                  pop quizzes is detected.
+                  <br />
+                  <span class="text fs-14 italic">
+                    Golang, gRPC, SSDB (Redis-like on-disk key-value store)
+                  </span>
+                </li>
+                <li>
+                  The Telegram bot reposnds to status quries and alert
+                  subscribes when a moodle quiz comes.
+                  <br />
+                  <span class="text fs-14 italic">
+                    Golang, gRPC
+                  </span>
+                </li>
+                <li>
+                  Deployed with Docker Compose which allow the scanner service
+                  to wake up only on a cron job, saving bandwidth and avoid
+                  detection.
+                  <br />
+                  <span class="text fs-14 italic">
+                    Docker, cron
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <div class="flex-container flex-vertical">
+              <a
+                href="https://github.com/michaellee8/flutter_blue_beacon"
+                target="_blank"
+                class="text bold fs-20 darkcyan"
+              >
+                FlutterBlue Beacon
+                <i class="material-icons md-12 no-print">
+                  public
+                </i>
+              </a>
+              <ul>
+                <li>
+                  A Flutter library created for working with Bluetooth Beacons.
+                  Initially built for BeaconApp and later open-sourced.
+                  <br />
+                  <span class="text fs-14 italic">
+                    Flutter
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <div class="flex-container flex-vertical">
+              <a
+                href="https://michaellee8.github.io"
+                target="_blank"
+                class="text bold fs-20 darkcyan"
+              >
+                This resume
+                <i class="material-icons md-12 no-print">
+                  public
+                </i>
+              </a>
+              <ul>
+                <li>
+                  Yes, I am serious. This resume is my challenge to built a
+                  responsove and interactive resume using raw HTML / JS / CSS.
+                  This resume uses no libraries except Material Icons, Ubuntu
+                  font and Normalize. Yet it works progressively on desktop,
+                  mobile phones and printers.
+                  <br />
+                  <span class="text fs-14 italic">
+                    HTML / JS / CSS
+                  </span>
+                </li>
+                <li>
+                  Please feel free to
+                  <span class="print-only">
+                    find an online version of this resume from
+                    michaellee8.github.io, as well as
+                  </span>
+                  look at my other projects from my
+                  <a href="https://github.com/michaellee8" target="_blank">
+                    GitHub
+                    <i class="material-icons md-12 no-print">
+                      public
+                    </i>
+                  </a>
+                  and
+                  <a href="https://gitlab.com/michaellee8" target="_blank">
+                    GitLab
+                    <i class="material-icons md-12 no-print">
+                      public
+                    </i>
+                  </a>
+                  profile.
+                </li>
+              </ul>
             </div>
           </div>
           <div>

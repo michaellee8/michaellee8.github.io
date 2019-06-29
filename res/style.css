@@ -11,6 +11,7 @@ body {
   background-color: darkcyan;
   color: white;
   flex-grow: var(--top-height-ratio);
+  flex-basis: 200px;
 }
 
 #panel {
@@ -97,6 +98,12 @@ body {
 .material-icons.md-18 {
   font-size: 18px;
 }
+.material-icons.md-20 {
+  font-size: 20px;
+}
+.material-icons.md-22 {
+  font-size: 22px;
+}
 .material-icons.md-24 {
   font-size: 24px;
 }
@@ -125,6 +132,14 @@ body {
 
 .fs-18 {
   font-size: 18px;
+}
+
+.fs-20 {
+  font-size: 20px;
+}
+
+.fs-22 {
+  font-size: 22px;
 }
 
 .fs-24 {
@@ -248,6 +263,13 @@ p.thin {
   }
 }
 
+@media screen {
+  .print-only,
+  .print-only * {
+    display: none !important;
+  }
+}
+
 hr {
   color: darkcyan;
 }
@@ -262,7 +284,21 @@ button {
 
 li {
   white-space: normal;
-  margin: 5px 0;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+ul {
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
+li {
+  font-size: 14px;
+}
+
+li > span.fs-14 {
+  font-size: 12px;
 }
 
 .fit-width {
