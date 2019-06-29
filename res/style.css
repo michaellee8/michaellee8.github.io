@@ -229,3 +229,7 @@ p.thin {
 hr {
   color: darkcyan;
 }
+
+button {
+  outline: none;
+}
