@@ -1,5 +1,5 @@
 :root {
-  --top-height-ratio: 15;
+  --top-height-ratio: 5;
 }
 
 body {
@@ -10,8 +10,12 @@ body {
   display: block;
   background-color: darkcyan;
   color: white;
-  flex-grow: var(--top-height-ratio);
-  flex-basis: 200px;
+  flex-grow: 0;
+  flex-basis: 100px;
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  flex-shrink: 1;
 }
 
 #panel {
@@ -303,4 +307,33 @@ li > span.fs-14 {
 
 .fit-width {
   width: 100%;
+}
+
+#contacts-container {
+  display: grid;
+  grid-template-columns: auto;
+}
+
+@media only print {
+  #contacts-container {
+    grid-template-columns: auto auto;
+  }
+  .fs-24.title {
+    font-size: 22px;
+  }
+  #panel {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+}
+
+@media (min-width: 600px) {
+  #contacts-container {
+    grid-template-columns: auto auto;
+  }
+}
+
+.contacts > .flex1 > p {
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
