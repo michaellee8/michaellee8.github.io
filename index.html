@@ -190,17 +190,65 @@
                 <div
                   class="flex-container flex-horizontal flex-axis-sec-center"
                 >
-                  <button class="large tag" data-tech-tag="reactjs">
+                  <a
+                    class="large tag"
+                    data-tech-tag="reactjs"
+                    id="reactjs-tag"
+                    href="#reactjs-popup"
+                  >
                     React.js
-                  </button>
-                  <div class="popup-modal">
+                  </a>
+                  <div class="popup-modal" id="reactjs-popup">
                     <div class="popup">
-                      <div class="flex-container flex-wrap flex-horizontal">
-                        <button class="close-btn">
-                          <div class="material-icons">
+                      <div
+                        class="flex-container flex-nowrap flex-horizontal flex-space-between"
+                      >
+                        <span class="text fs-28 darkcyan bold">
+                          React.js
+                        </span>
+                        <a class="close-btn" href="#">
+                          <div class="material-icons md-36">
                             close
                           </div>
-                        </button>
+                        </a>
+                      </div>
+                      <hr />
+                      <div class="flex-container flex-vertical flex-nowrap">
+                        <div class="flex-container flex-vertical">
+                          <a
+                            href="https://github.com/michaellee8/revisioner"
+                            target="_blank"
+                            class="text bold fs-20 darkcyan"
+                          >
+                            Revisioner
+                            <i class="material-icons md-12 no-print">
+                              public
+                            </i>
+                          </a>
+                          <ul>
+                            <li>
+                              Revisioner is a webapp project written during my
+                              secondary school. It provides a platform for
+                              teaching and learning for multiple choice
+                              questions.
+                            </li>
+                            <li>
+                              It utilize React.js for the UI part and GraphQL to
+                              connect with the backend.
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="flex-container flex-vertical">
+                          <a class="text bold fs-20 darkcyan">
+                            iClass MDM
+                          </a>
+                          <ul>
+                            <li>
+                              A small part of the iClass MDM service is written
+                              using React.js.
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -229,8 +277,14 @@
                   <button class="small tag" data-tech-tag="php">
                     PHP
                   </button>
+                  <button class="small tag" data-tech-tag="python">
+                    Python
+                  </button>
                   <button class="small tag dotted" data-tech-tag="c-cpp">
                     C / C++
+                  </button>
+                  <button class="small tag dotted" data-tech-tag="java">
+                    Java
                   </button>
                   <button class="large tag" data-tech-tag="mysql">
                     MySQL
@@ -341,7 +395,9 @@
             <hr />
             <div class="flex-container flex-vertical">
               <div>
-                <span class="text fs-20 bold darkcyan">Developer</span>
+                <span class="text fs-20 bold darkcyan">
+                  Part-time Developer
+                </span>
                 <br />
                 <span class="text fs-18">
                   HKU e-Learning Development Labroatory
@@ -392,7 +448,7 @@
               </div>
             </div>
           </div>
-          <div>
+          <div class="no-top-margin">
             <span class="fs-24 text bold darkcyan title">
               Highlighted Personal Projects
             </span>
@@ -526,8 +582,8 @@
               </a>
               <ul>
                 <li>
-                  Yes, I am serious. This resume is my challenge to built a
-                  responsove and interactive resume using raw HTML / CSS. This
+                  Yes, I am serious. This resume is my challenge to build a
+                  responsive and interactive resume using raw HTML / CSS. This
                   resume uses no libraries except Material Icons, Ubuntu font
                   and Normalize. Yet it works progressively on desktop, mobile
                   phones and printers (
