@@ -6,6 +6,10 @@ body {
   font-family: "Ubuntu", sans-serif;
 }
 
+button {
+  background-color: lightgray;
+}
+
 #top-bar {
   display: block;
   background-color: darkcyan;
@@ -20,7 +24,6 @@ body {
 
 #panel {
   background-color: white;
-  flex-grow: calc(100-var(--top-height-ratio));
 }
 
 body {
@@ -314,17 +317,19 @@ li > span.fs-14 {
   grid-template-columns: auto;
 }
 
-@media only print {
+@media print {
   #contacts-container {
     grid-template-columns: auto auto;
   }
-  .fs-24.title {
-    font-size: 22px;
-  }
-  #panel {
-    padding-top: 0px;
-    padding-bottom: 0px;
-  }
+}
+
+#panel {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.fs-24.title {
+  font-size: 22px;
 }
 
 @media (min-width: 600px) {
