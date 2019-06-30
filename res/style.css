@@ -8,6 +8,12 @@ body {
 
 button {
   background-color: lightgray;
+  outline: none;
+}
+
+a.tag {
+  background-color: lightgray;
+  outline: none;
 }
 
 #top-bar {
@@ -281,10 +287,6 @@ hr {
   color: darkcyan;
 }
 
-button {
-  outline: none;
-}
-
 .break-long-line {
   word-wrap: break-word;
 }
@@ -341,4 +343,53 @@ li > span.fs-14 {
 .contacts > .flex1 > p {
   margin-top: 5px;
   margin-bottom: 5px;
+}
+
+.tag + .popup-modal {
+  display: none;
+  position: fixed;
+  overflow: auto;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* .tag + .popup-modal > .popup {
+  display: none;
+} */
+
+a.tag {
+  line-height: 150%;
+  box-sizing: border-box;
+}
+
+.tag:active + .popup-modal,
+.tag:focus + .popup-modal {
+  display: block;
+}
+
+.popup-modal:focus,
+.popup-modal:active {
+  display: block;
+}
+
+.popup-modal > .popup {
+  display: block;
+  background-color: white;
+  margin-top: 15%;
+  margin-bottom: 15%;
+  padding: 20px;
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 80%;
+}
+
+.close-btn {
+  background-color: white;
+  border: none;
+  outline: none;
 }
