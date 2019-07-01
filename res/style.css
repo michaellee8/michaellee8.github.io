@@ -360,7 +360,6 @@ li > span.fs-14 {
   visibility: hidden;
   opacity: 0;
   position: fixed;
-  overflow: auto;
   top: 0;
   left: 0;
   z-index: 100;
@@ -375,9 +374,19 @@ li > span.fs-14 {
   display: none;
 } */
 
-a.tag {
+a.tag.large {
   line-height: 150%;
+}
+
+a.tag {
   box-sizing: border-box;
+  padding: 3px;
+  color: black;
+}
+
+button.tag {
+  background-color: lightgray;
+  color: black;
 }
 
 .popup-modal:target {
@@ -397,6 +406,10 @@ a.tag {
   width: 80%;
   box-sizing: border-box;
   border-radius: 10px;
+}
+
+.popup-modal > .popup > .popup-content {
+  overflow: auto;
 }
 
 .close-btn {
