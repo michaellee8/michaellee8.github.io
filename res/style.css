@@ -45,7 +45,15 @@ body {
   flex-wrap: nowrap;
 }
 
+.flex-container.flex-nowrap {
+  flex-wrap: nowrap;
+}
+
 .flex-container.wrap {
+  flex-wrap: wrap;
+}
+
+.flex-container.flex-wrap {
   flex-wrap: wrap;
 }
 
@@ -400,6 +408,7 @@ button.tag {
   background-color: white;
   margin-top: 15%;
   margin-bottom: 15%;
+  max-height: 80%;
   padding: 20px;
   margin-left: 10%;
   margin-right: 10%;
@@ -409,7 +418,8 @@ button.tag {
 }
 
 .popup-modal > .popup > .popup-content {
-  overflow: auto;
+  overflow-y: auto;
+  max-height: 60%;
 }
 
 .close-btn {
