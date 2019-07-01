@@ -175,7 +175,7 @@
       <div id="panel" class="padding10 flex-container flex-horizontal">
         <div id="left-panel" class="flex-container flex-vertical">
           <div>
-            <div>
+            <div id="skills-header">
               <span class="fs-24 text bold darkcyan title">
                 Skills
               </span>
@@ -212,7 +212,7 @@
                             Working Knowledge
                           </span>
                         </div>
-                        <a class="close-btn" href="#">
+                        <a class="close-btn" href="#skills-head">
                           <div class="material-icons md-36">
                             close
                           </div>
@@ -282,7 +282,7 @@
                             Working Knowledge
                           </span>
                         </div>
-                        <a class="close-btn" href="#">
+                        <a class="close-btn" href="#skills-header">
                           <div class="material-icons md-36">
                             close
                           </div>
@@ -342,7 +342,7 @@
                             Working Knowledge
                           </span>
                         </div>
-                        <a class="close-btn" href="#">
+                        <a class="close-btn" href="#skills-header">
                           <div class="material-icons md-36">
                             close
                           </div>
@@ -429,7 +429,7 @@
                             Working Knowledge
                           </span>
                         </div>
-                        <a class="close-btn" href="#">
+                        <a class="close-btn" href="#skills-header">
                           <div class="material-icons md-36">
                             close
                           </div>
@@ -524,7 +524,7 @@
                             Working Knowledge
                           </span>
                         </div>
-                        <a class="close-btn" href="#">
+                        <a class="close-btn" href="#skills-header">
                           <div class="material-icons md-36">
                             close
                           </div>
@@ -646,7 +646,7 @@
                             Working Knowledge
                           </span>
                         </div>
-                        <a class="close-btn" href="#">
+                        <a class="close-btn" href="#skills-header">
                           <div class="material-icons md-36">
                             close
                           </div>
@@ -749,7 +749,7 @@
                             Working Knowledge
                           </span>
                         </div>
-                        <a class="close-btn" href="#">
+                        <a class="close-btn" href="#skills-header">
                           <div class="material-icons md-36">
                             close
                           </div>
@@ -804,7 +804,7 @@
                             Basic Knowledge
                           </span>
                         </div>
-                        <a class="close-btn" href="#">
+                        <a class="close-btn" href="#skills-header">
                           <div class="material-icons md-36">
                             close
                           </div>
@@ -859,23 +859,24 @@
                             Basic Knowledge
                           </span>
                         </div>
-                        <a class="close-btn" href="#">
+                        <a class="close-btn" href="#skills-header">
                           <div class="material-icons md-36">
                             close
                           </div>
                         </a>
                       </div>
                       <hr />
-                      <ul>
-                        <li>
-                          Apart from the project(s) shown below, I also have
-                          experience using C++ to do competitive programming in
-                          online programming contests and HKOI.
-                        </li>
-                      </ul>
+
                       <div
                         class="flex-container flex-vertical flex-nowrap popup-content"
                       >
+                        <ul>
+                          <li>
+                            Apart from the project(s) shown below, I also have
+                            experience using C++ to do competitive programming
+                            in online programming contests and HKOI.
+                          </li>
+                        </ul>
                         <div class="flex-container flex-vertical">
                           <a
                             class="text bold fs-20 darkcyan"
@@ -935,7 +936,7 @@
                             Basic Knowledge
                           </span>
                         </div>
-                        <a class="close-btn" href="#">
+                        <a class="close-btn" href="#skills-header">
                           <div class="material-icons md-36">
                             close
                           </div>
@@ -996,7 +997,7 @@
                             Working Knowledge
                           </span>
                         </div>
-                        <a class="close-btn" href="#">
+                        <a class="close-btn" href="#skills-header">
                           <div class="material-icons md-36">
                             close
                           </div>
@@ -1050,15 +1051,164 @@
                     </div>
                   </div>
 
-                  <button class="small tag dotted" data-tech-tag="psql">
+                  <a
+                    class="small tag dotted"
+                    data-tech-tag="psql"
+                    id="psql-tag"
+                    href="#psql-popup"
+                  >
                     PostgreSQL
-                  </button>
-                  <button class="large tag" data-tech-tag="redis">
+                  </a>
+                  <div class="popup-modal" id="psql-popup">
+                    <div class="popup">
+                      <div
+                        class="flex-container flex-nowrap flex-horizontal flex-space-between popup-title"
+                      >
+                        <div>
+                          <span class="text fs-28 darkcyan bold">
+                            PostgreSQL
+                          </span>
+                          <br />
+                          <span class="text fs-14 italic">
+                            Basic Knowledge
+                          </span>
+                        </div>
+                        <a class="close-btn" href="#skills-header">
+                          <div class="material-icons md-36">
+                            close
+                          </div>
+                        </a>
+                      </div>
+                      <hr />
+                      <ul>
+                        <li>
+                          I am currently learning PostgreSQL. Although I uses
+                          MySQL mostly, I guess PostgreSQL would also be
+                          familiar for me since they both comply with SQL
+                          standards.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <a
+                    class="small tag"
+                    data-tech-tag="redis"
+                    id="redis-tag"
+                    href="#redis-popup"
+                  >
                     Redis
-                  </button>
-                  <button class="large tag" data-tech-tag="rabbitmq">
+                  </a>
+                  <div class="popup-modal" id="redis-popup">
+                    <div class="popup">
+                      <div
+                        class="flex-container flex-nowrap flex-horizontal flex-space-between popup-title"
+                      >
+                        <div>
+                          <span class="text fs-28 darkcyan bold">
+                            Redis
+                          </span>
+                          <br />
+                          <span class="text fs-14 italic">
+                            Working Knowledge
+                          </span>
+                        </div>
+                        <a class="close-btn" href="#skills-header">
+                          <div class="material-icons md-36">
+                            close
+                          </div>
+                        </a>
+                      </div>
+                      <hr />
+                      <div
+                        class="flex-container flex-vertical flex-nowrap popup-content"
+                      >
+                        <div class="flex-container flex-vertical">
+                          <a
+                            href="https://gitlab.com/beaconapp/beacon-app"
+                            target="_blank"
+                            class="text bold fs-20 darkcyan"
+                          >
+                            BeaconApp
+                            <i class="material-icons md-12 no-print">
+                              public
+                            </i>
+                          </a>
+                          <ul>
+                            <li>
+                              The BeaconApp is a mobile chat app made to connect
+                              people inside the same room using Blueooth Beacons
+                              technology.
+                            </li>
+                            <li>
+                              It utilize Redis as a in-memory cache for recently
+                              sent message.
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <a
+                    class="small tag"
+                    data-tech-tag="rabbitmq"
+                    id="rabbitmq-tag"
+                    href="#rabbitmq-popup"
+                  >
                     RabbitMQ
-                  </button>
+                  </a>
+                  <div class="popup-modal" id="rabbitmq-popup">
+                    <div class="popup">
+                      <div
+                        class="flex-container flex-nowrap flex-horizontal flex-space-between popup-title"
+                      >
+                        <div>
+                          <span class="text fs-28 darkcyan bold">
+                            RabbitMQ
+                          </span>
+                          <br />
+                          <span class="text fs-14 italic">
+                            Working Knowledge
+                          </span>
+                        </div>
+                        <a class="close-btn" href="#skills-header">
+                          <div class="material-icons md-36">
+                            close
+                          </div>
+                        </a>
+                      </div>
+                      <hr />
+                      <div
+                        class="flex-container flex-vertical flex-nowrap popup-content"
+                      >
+                        <div class="flex-container flex-vertical">
+                          <a
+                            href="https://gitlab.com/beaconapp/beacon-app"
+                            target="_blank"
+                            class="text bold fs-20 darkcyan"
+                          >
+                            BeaconApp
+                            <i class="material-icons md-12 no-print">
+                              public
+                            </i>
+                          </a>
+                          <ul>
+                            <li>
+                              The BeaconApp is a mobile chat app made to connect
+                              people inside the same room using Blueooth Beacons
+                              technology.
+                            </li>
+                            <li>
+                              It utilize RabbitMQ as a message queue between
+                              it's message receiving service and message
+                              brodcasting service.
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div>
@@ -1066,15 +1216,243 @@
                 <div
                   class="flex-container flex-horizontal flex-axis-sec-center"
                 >
-                  <button class="large tag" data-tech-tag="docker">
+                  <a
+                    class="large tag"
+                    data-tech-tag="docker"
+                    id="docker-tag"
+                    href="#docker-popup"
+                  >
                     Docker
-                  </button>
-                  <button class="large tag" data-tech-tag="gitlab">
+                  </a>
+                  <div class="popup-modal" id="docker-popup">
+                    <div class="popup">
+                      <div
+                        class="flex-container flex-nowrap flex-horizontal flex-space-between popup-title"
+                      >
+                        <div>
+                          <span class="text fs-28 darkcyan bold">
+                            Docker
+                          </span>
+                          <br />
+                          <span class="text fs-14 italic">
+                            Working Knowledge
+                          </span>
+                        </div>
+                        <a class="close-btn" href="#skills-header">
+                          <div class="material-icons md-36">
+                            close
+                          </div>
+                        </a>
+                      </div>
+                      <hr />
+                      <div
+                        class="flex-container flex-vertical flex-nowrap popup-content"
+                      >
+                        <div class="flex-container flex-vertical">
+                          <a
+                            href="https://gitlab.com/beaconapp/beacon-app"
+                            target="_blank"
+                            class="text bold fs-20 darkcyan"
+                          >
+                            BeaconApp
+                            <i class="material-icons md-12 no-print">
+                              public
+                            </i>
+                          </a>
+                          <ul>
+                            <li>
+                              The BeaconApp is a mobile chat app made to connect
+                              people inside the same room using Blueooth Beacons
+                              technology.
+                            </li>
+                            <li>
+                              It's backend architecture uses Docker and Docker
+                              Compose for deployment.
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="flex-container flex-vertical">
+                          <a
+                            href="https://github.com/michaellee8/moodle-puppeteer-tg-bot"
+                            target="_blank"
+                            class="text bold fs-20 darkcyan"
+                          >
+                            Telegram bot for Moodle Monitoring
+                            <i class="material-icons md-12 no-print">
+                              public
+                            </i>
+                          </a>
+                          <ul>
+                            <li>
+                              This Telegram bot is designed to allow myself to
+                              be alerted when course teachers post some pop
+                              quizzes in Moodle during lessons.
+                            </li>
+                            <li>
+                              It's backend part uses Docker and Docker Compose
+                              for deployment.
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="flex-container flex-vertical">
+                          <a
+                            class="text bold fs-20 darkcyan"
+                            target="_blank"
+                            href="https://websams.sis.iclass.hk"
+                          >
+                            iClass SIS
+                            <i class="material-icons md-12 no-print">
+                              public
+                            </i>
+                          </a>
+                          <ul>
+                            <li>
+                              The deployment process of iClass SIS uses Docker
+                              with Portainer.
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <a
+                    class="large tag"
+                    data-tech-tag="gitlab-ci-cd"
+                    id="gitlab-ci-cd-tag"
+                    href="#gitlab-ci-cd-popup"
+                  >
                     GitLab CI / CD
-                  </button>
-                  <button class="small tag dotted" data-tech-tag="k8s">
+                  </a>
+                  <div class="popup-modal" id="gitlab-ci-cd-popup">
+                    <div class="popup">
+                      <div
+                        class="flex-container flex-nowrap flex-horizontal flex-space-between popup-title"
+                      >
+                        <div>
+                          <span class="text fs-28 darkcyan bold">
+                            GitLab CI / CD
+                          </span>
+                          <br />
+                          <span class="text fs-14 italic">
+                            Working Knowledge
+                          </span>
+                        </div>
+                        <a class="close-btn" href="#skills-header">
+                          <div class="material-icons md-36">
+                            close
+                          </div>
+                        </a>
+                      </div>
+                      <hr />
+                      <div
+                        class="flex-container flex-vertical flex-nowrap popup-content"
+                      >
+                        <div class="flex-container flex-vertical">
+                          <a
+                            class="text bold fs-20 darkcyan"
+                            target="_blank"
+                            href="https://gitlab.com/michaellee8/hku-assignments"
+                          >
+                            Programming Assignments Tester
+                            <i class="material-icons md-12 no-print">
+                              public
+                            </i>
+                          </a>
+                          <ul>
+                            <li>
+                              This GitLab repo stores my solutions on
+                              programming courses.
+                            </li>
+                            <li>
+                              It utilizes GitLab CI and a suite of custom
+                              written bash scripts to run automatic tests on
+                              each commit.
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="flex-container flex-vertical">
+                          <a
+                            class="text bold fs-20 darkcyan"
+                            target="_blank"
+                            href="https://websams.sis.iclass.hk"
+                          >
+                            iClass SIS
+                            <i class="material-icons md-12 no-print">
+                              public
+                            </i>
+                          </a>
+                          <ul>
+                            <li>
+                              iClass SIS uses Gitlab CI to perform automatic
+                              deployment.
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <a
+                    class="small tag dotted"
+                    data-tech-tag="k8s"
+                    id="k8s-tag"
+                    href="#k8s-popup"
+                  >
                     Kubernetes
-                  </button>
+                  </a>
+                  <div class="popup-modal" id="k8s-popup">
+                    <div class="popup">
+                      <div
+                        class="flex-container flex-nowrap flex-horizontal flex-space-between popup-title"
+                      >
+                        <div>
+                          <span class="text fs-28 darkcyan bold">
+                            Kubernetes
+                          </span>
+                          <br />
+                          <span class="text fs-14 italic">
+                            Basic Knowledge
+                          </span>
+                        </div>
+                        <a class="close-btn" href="#skills-header">
+                          <div class="material-icons md-36">
+                            close
+                          </div>
+                        </a>
+                      </div>
+                      <hr />
+                      <div
+                        class="flex-container flex-vertical flex-nowrap popup-content"
+                      >
+                        <div class="flex-container flex-vertical">
+                          <a
+                            href="https://gitlab.com/beaconapp/beacon-app"
+                            target="_blank"
+                            class="text bold fs-20 darkcyan"
+                          >
+                            BeaconApp
+                            <i class="material-icons md-12 no-print">
+                              public
+                            </i>
+                          </a>
+                          <ul>
+                            <li>
+                              The BeaconApp is a mobile chat app made to connect
+                              people inside the same room using Blueooth Beacons
+                              technology.
+                            </li>
+                            <li>
+                              Currently I am working on migrating its deployment
+                              method from Docker Compose to Kubernetes. You can
+                              see some Kubernetes configs generated with Kompose
+                              and then modified inside the repo.
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div>
@@ -1082,15 +1460,176 @@
                 <div
                   class="flex-container flex-horizontal flex-axis-sec-center"
                 >
-                  <button class="large tag" data-tech-tag="linux">
+                  <a
+                    class="large tag"
+                    data-tech-tag="linux"
+                    id="linux-tag"
+                    href="#linux-popup"
+                  >
                     Linux
-                  </button>
-                  <button class="large tag" data-tech-tag="grpc">
-                    gRPC
-                  </button>
-                  <button class="small tag dotted" data-tech-tag="godot">
+                  </a>
+                  <div class="popup-modal" id="linux-popup">
+                    <div class="popup">
+                      <div
+                        class="flex-container flex-nowrap flex-horizontal flex-space-between popup-title"
+                      >
+                        <div>
+                          <span class="text fs-28 darkcyan bold">
+                            Linux
+                          </span>
+                          <br />
+                          <span class="text fs-14 italic">
+                            Working Knowledge
+                          </span>
+                        </div>
+                        <a class="close-btn" href="#skills-header">
+                          <div class="material-icons md-36">
+                            close
+                          </div>
+                        </a>
+                      </div>
+                      <hr />
+                      <ul>
+                        <li>
+                          I use Ubuntu Linux for everyday tasks and development.
+                          Most of the server-side applications that I develop
+                          also work on Linux.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <a
+                    class="large tag"
+                    data-tech-tag="grpc"
+                    id="grpc-tag"
+                    href="#grpc-popup"
+                  >
+                    gRPC / Protocol Buffers
+                  </a>
+                  <div class="popup-modal" id="grpc-popup">
+                    <div class="popup">
+                      <div
+                        class="flex-container flex-nowrap flex-horizontal flex-space-between popup-title"
+                      >
+                        <div>
+                          <span class="text fs-28 darkcyan bold">
+                            gRPC / Protocol Buffers
+                          </span>
+                          <br />
+                          <span class="text fs-14 italic">
+                            Working Knowledge
+                          </span>
+                        </div>
+                        <a class="close-btn" href="#skills-header">
+                          <div class="material-icons md-36">
+                            close
+                          </div>
+                        </a>
+                      </div>
+                      <hr />
+                      <div
+                        class="flex-container flex-vertical flex-nowrap popup-content"
+                      >
+                        <div class="flex-container flex-vertical">
+                          <a
+                            href="https://gitlab.com/beaconapp/beacon-app"
+                            target="_blank"
+                            class="text bold fs-20 darkcyan"
+                          >
+                            BeaconApp
+                            <i class="material-icons md-12 no-print">
+                              public
+                            </i>
+                          </a>
+                          <ul>
+                            <li>
+                              The BeaconApp is a mobile chat app made to connect
+                              people inside the same room using Blueooth Beacons
+                              technology.
+                            </li>
+                            <li>
+                              It's backend architecture uses gRPC and Protocol
+                              Buffers to communicate between services. These two
+                              protocols are also used to communicate between
+                              backend server and frontend app.
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="flex-container flex-vertical">
+                          <a
+                            href="https://github.com/michaellee8/moodle-puppeteer-tg-bot"
+                            target="_blank"
+                            class="text bold fs-20 darkcyan"
+                          >
+                            Telegram bot for Moodle Monitoring
+                            <i class="material-icons md-12 no-print">
+                              public
+                            </i>
+                          </a>
+                          <ul>
+                            <li>
+                              This Telegram bot is designed to allow myself to
+                              be alerted when course teachers post some pop
+                              quizzes in Moodle during lessons.
+                            </li>
+                            <li>
+                              It's backend part uses gRPC and Protocol Buffers
+                              to communicate between services.
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <a
+                    class="small dotted tag"
+                    data-tech-tag="godot"
+                    id="godot-tag"
+                    href="#godot-popup"
+                  >
                     Godot Engine
-                  </button>
+                  </a>
+                  <div class="popup-modal" id="godot-popup">
+                    <div class="popup">
+                      <div
+                        class="flex-container flex-nowrap flex-horizontal flex-space-between popup-title"
+                      >
+                        <div>
+                          <span class="text fs-28 darkcyan bold">
+                            Godot Engine
+                          </span>
+                          <br />
+                          <span class="text fs-14 italic">
+                            Basic Knowledge
+                          </span>
+                        </div>
+                        <a class="close-btn" href="#skills-header">
+                          <div class="material-icons md-36">
+                            close
+                          </div>
+                        </a>
+                      </div>
+                      <hr />
+                      <div
+                        class="flex-container flex-vertical flex-nowrap popup-content"
+                      >
+                        <div class="flex-container flex-vertical">
+                          <ul>
+                            <li>
+                              Godot Engine is a MIT-licensed open-source game
+                              engine.
+                            </li>
+                            <li>
+                              I am currently learning to develop mobile games
+                              with it.
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
